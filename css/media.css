@@ -1,210 +1,23 @@
-@media (min-width: 320px) {
-    .header-a {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        background-color: #FFF;
-        border-bottom: 1px solid #D9FFF5;
-        padding: 18.6px 16px;
-    }
-
-    .icon {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-    }
-
-    .header-a__left {
-        display: flex;
-    }
-
-    .header-a__right {
-        align-self: center;
-    }
-
-    .call,
-    .chat,
-    .profile {
-        display: none;
-    }
-
-    .header-a__list {
-        display: flex;
-        align-self: center;
-    }
-
-    .burger {
-        align-self: center;
-        margin-right: 16px;
-    }
-
-
-    .logo::after {
-        content: '';
-        width: 2px;
-        height: 32px;
-        position: absolute;
-        top: 28px;
-        left: 186px;
-        background-image: url(../assets/icon/divider.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-
-    .repair {
-        margin-right: 16px;
-    }
-
-    .body-a__container {
-        padding-top: 24px;
-        padding-left: 16px;
-    }
-
-    .title-menu::before {
-        content: '';
-        position: absolute;
-        top: 112px;
-        left: 0px;
-        background-image: url(../assets/icon/highlight.svg);
-        width: 4px;
-        height: 40px;
-    }
-
-    .title-menu {
-        font-size: 28px;
-        color: #1B1C21;
-        margin-bottom: 24px;
-        line-height: 40px;
-        letter-spacing: -0.6px;
-    }
-
-    .body-a__list {
-        display: none;
-    }
-
-    .tabs-nav {
-        display: flex;
-        overflow-x: auto;
-        margin-bottom: 24px;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-      }
-
-    .tabs-nav__items {
-        display: flex;
-        flex-wrap: nowrap;
-        align-self: center;
-        white-space: nowrap;
-        background-color: transparent;
-        margin-right: 1px;
-    }
-
-    .tabs-nav__btn {
-        color: #7E7E82;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        padding: 8px 16px;
-        font-weight: 500;
-    }
-
-    .tabs-nav__btn_active {
-        background-color: #FFFFFF;
-        outline: 2px solid rgba(184, 255, 236, 1);
-        outline-offset: -2px;
-        border-radius: 6px;
-    }
-
-    .body-b__text {
-        color: #1B1C21;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.2px;
-        padding: 0px 16px;
-        margin-bottom: 16px;
-        text-align: left;
-    }
-
-    .body-b__text-a {
-        display: none;
-    }
-
-    .body-b__text-b {
-        display: none;
-    }
-    
-    .body-b__link {
-        display: inline-flex;
-        align-items: center;
-        color: #1B1C21;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        font-weight: 500;
-        padding-left: 16px;
-        margin-bottom: 16px;
-    }
-
-    .body-b__link-text {
-        padding-left: 8px;
-    }
-
-    .body-b__img {
-        width: 100vw;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
 @media (min-width: 768px) {
 
     .header-a {
         padding-left: 24px;
         padding-right: 24px;
       }
-      
-    .burger {
-        margin-right: 42px;
-    }
 
-    .call,
-    .chat,
-    .profile {
+    .header-a__list_hidden {
         display: flex;
     }
 
-    .call,
-    .chat {
-        margin-right: 16px;
-    }
-    
-    
-    .profile {
-        margin-right: 42px;
+    .hidden-divider-m {
+        display: none;
     }
 
-    .repair::after {
-        content: '';
-        width: 2px;
-        height: 32px;
-        position: absolute;
-        top: 28px;
-        right: 140px;
-        background-image: url(../assets/icon/divider.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+    .hidden-divider {
+        display: flex;
+        margin: 0 4px;
     }
 
-    .logo::after {
-        left: 84px;
-    }
     .title-menu {
         margin-bottom: 32px;
     }
@@ -248,6 +61,7 @@
         border-radius: 5px;
     }
 }
+
 
 @media (min-width: 1120px) {
     .header-a {
